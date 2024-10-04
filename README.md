@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Mock Interviewer
 
-## Getting Started
+**AI-Mock Interviewer** is a platform designed to help users practice technical interviews with real-time feedback. The platform uses the Gemini API for AI-driven interview questions and responses. It is built with Next.js and React.js and provides secure user authentication using Clerk.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Simulate technical interviews with AI-driven feedback.
+- Real-time interview experience with Gemini API.
+- User authentication with Clerk for secure access.
+- Optimized PostgreSQL queries for fast data handling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Frontend:
+- **Next.js**
+- **React.js**
+- **Tailwind CSS** (Styling)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Backend:
+- **Node.js**
+- **PostgreSQL** (Database)
+- **Gemini API** (AI-Driven Responses)
 
-## Learn More
+### Additional Tools:
+- **Clerk** (User Authentication)
+- **Vercel** (Frontend Hosting)
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites:
+- Node.js
+- PostgreSQL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Steps to run the project:
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git clone https://github.com/yourusername/ai-mock-interviewer.git
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Navigate to the **frontend** and **backend** directories and install the dependencies:
+
+    ```bash
+    cd frontend
+    npm install
+
+    cd ../backend
+    npm install
+    ```
+
+3. Create a `.env` file in the **backend** directory with the necessary environment variables. Example:
+
+    **Backend .env**:
+    ```env
+    DATABASE_URL=<Your PostgreSQL URL>
+    CLERK_SECRET=<Your Clerk Secret>
+    ```
+
+4. Start both the backend and frontend servers:
+
+    **Backend**:
+    ```bash
+    npm start
+    ```
+
+    **Frontend**:
+    ```bash
+    npm start
+    ```
+
+5. Open the application in your browser at `http://localhost:3000`.
+
+## Contribution
+
+Feel free to submit pull requests with improvements or new features.
+
+## License
+
+This project is licensed under the MIT License.
